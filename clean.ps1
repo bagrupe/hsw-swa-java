@@ -16,30 +16,9 @@ Set-Location $PSScriptRoot/14-mavify-solution
 
 & mvn clean
 
-Set-Location $PSScriptRoot/swa1-jpa/swa1-jpa-1
+Set-Location $PSScriptRoot/30-parent
 
 & mvn clean
-
-Set-Location $PSScriptRoot/swa1-jpa/swa1-jpa-2
-
-& mvn clean
-
-Set-Location $PSScriptRoot/swa1-jpa/swa1-jpa-3
-
-& mvn clean
-
-Set-Location $PSScriptRoot/swa1-jpa/swa1-jpa-4
-
-& mvn clean
-
-Set-Location $PSScriptRoot/swa1-jpa/swa1-jpa-5
-
-& mvn clean
-
-Set-Location $PSScriptRoot/swa1-jpa/swa1-jpa-6
-
-& mvn clean
-
 
 Set-Location $cwd
 

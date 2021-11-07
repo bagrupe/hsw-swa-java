@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>de.hsw</groupId>
+    <artifactId>swa-jpa</artifactId>
+    <version>2021</version>
+    <organization>
+        <name>HSW</name>
+        <url>https://hsw-hameln.de</url>
+    </organization>
+    <packaging>pom</packaging>
+    
+    <properties>
+        <java.version>17</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+            
+        </plugins>
+    </build>
+    <modules>
+        <module>../31-jpa-basics</module>
+        <module>../32-jpa-onetoone</module>
+        <module>../33-jpa-onetoone-pk</module>
+        <module>../34-jpa-onetomany</module>
+        <module>../35-jpa-manytomany</module>
+        <module>../36-jpa-onetomany-bidi</module>
+    </modules>
+</project>
