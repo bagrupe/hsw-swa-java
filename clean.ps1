@@ -1,6 +1,18 @@
 $cwd = Get-Location
 
-Set-Location $PSScriptRoot/swa1-maven-parent/00-parent
+Set-Location $PSScriptRoot/11-maven-fizzbuzz
+
+& mvn clean
+
+Set-Location $PSScriptRoot/12-maven-caesar-solution
+
+& mvn clean
+
+Set-Location $PSScriptRoot/13-maven-parent
+
+& mvn clean
+
+Set-Location $PSScriptRoot/14-mavify-solution
 
 & mvn clean
 
@@ -45,6 +57,6 @@ foreach($file in $settings) {
 }
 
 Set-Location $PSScriptRoot
-Remove-Item $PSScriptRoot/../hsw-swa1-java.zip
-& zip -r $PSScriptRoot/../hsw-swa1-java.zip . -x '*.git*' -x '*.DS_Store*'
+Remove-Item $PSScriptRoot/../hsw-swa-java.zip
+& zip -r $PSScriptRoot/../hsw-swa-java.zip . -x '*.git*' -x '*.DS_Store*'
 Set-Location $cwd

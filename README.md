@@ -1,6 +1,6 @@
-# hsw-swa1-java
+# hsw-swa-java
 
-# Hochschule Weserbergland - Softwarearchitektur I - Java
+# Hochschule Weserbergland - Softwarearchitektur I/II - Java
 
 Siehe https://www.hsw-hameln.de/studienangebote/duales-studium/programm/wirtschaftsinformatik-bsc/
 

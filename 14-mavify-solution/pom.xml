@@ -3,7 +3,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.hsw</groupId>
-    <artifactId>swa1</artifactId>
+    <artifactId>swa</artifactId>
     <version>2021</version>
     <organization>
         <name>HSW</name>
@@ -32,7 +32,8 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         </plugins>
     </build>
     <modules>
-        <module>../11-fizzbuzz-solution</module>
-        <module>../23-caesar-solution</module>
+        <module>caesar</module>
+        <module>fizzbuzz</module>
+        <module>point</module>
     </modules>
 </project>

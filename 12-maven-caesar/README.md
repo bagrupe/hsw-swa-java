@@ -1,0 +1,1 @@
+Überführen Sie die Klasse "Starter.java" in ein Maven-Projekt analog dem Projekt "11-maven-fizzbuzz".
