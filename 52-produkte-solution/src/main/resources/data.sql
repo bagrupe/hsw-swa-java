@@ -1,0 +1,1 @@
+INSERT INTO T_PRODUCT (NAME, SHORT_DESCRIPTION, LONG_DESCRIPTION, PRODUCT_IMAGE, PRICE, VAT, ACTIVE) values ('BIG beer', 'Dickes Craftbeer', 'Dickes Craftbeer mit 6,666%', 'beer.png', 6.66, 19, 1);

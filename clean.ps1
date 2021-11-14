@@ -20,6 +20,14 @@ Set-Location $PSScriptRoot/30-parent
 
 & mvn clean
 
+Set-Location $PSScriptRoot/40-parent
+
+& mvn clean
+
+Set-Location $PSScriptRoot/50-parent
+
+& mvn clean
+
 Set-Location $cwd
 
 $classpaths = Get-ChildItem -Path . -Include .classpath -Recurse -Hidden

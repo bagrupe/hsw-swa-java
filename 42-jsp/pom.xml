@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.hsw</groupId>
+	<artifactId>12-jsp</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<name>12-jsp</name>
+	<description>HSW</description>
+	<packaging>jar</packaging>
+	<parent>
+		<groupId>de.hsw</groupId>
+		<artifactId>swa-classic</artifactId>
+		<version>2022</version>
+		<relativePath>../40-parent/pom.xml</relativePath>
+	</parent>
+	<properties></properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>4.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>javax.servlet.jsp-api</artifactId>
+			<version>2.3.3</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+</project>
