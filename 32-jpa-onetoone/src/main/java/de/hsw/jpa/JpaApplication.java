@@ -41,7 +41,6 @@ public class JpaApplication {
 			a.setCustomer(c);
 			c.setAddress(a);
 
-			addressRepo.save(a);
 			customerRepo.save(c);
 
 			addressRepo.findAll().forEach(x -> System.out.println(x));

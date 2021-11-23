@@ -2,11 +2,13 @@ package de.hsw.jpa.beans;
 
 import java.time.LocalDate;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Version;
@@ -24,7 +26,8 @@ public class Customer {
     @Column
     private LocalDate birthDate;
 
-    @OneToOne(mappedBy = "customer")
+    @OneToOne(cascade = CascadeType.ALL) 
+    @JoinColumn(name = "address_id", referencedColumnName = "id")
     private Address address;
 
     @Version
