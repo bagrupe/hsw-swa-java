@@ -1,12 +1,16 @@
 package de.hsw.shop.beans;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import lombok.Data;
@@ -53,6 +57,12 @@ public class Customer {
 
     @Column
     private boolean active;
+
+    @lombok.ToString.Exclude
+    @lombok.EqualsAndHashCode.Exclude
+    @Column
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "customer")
+    private List<Order> orders = new ArrayList<>();
 
     public Customer(String prename, String surname, String password, LocalDate birthdate, String street,
             String streetno, String zipcode, String city, String country, String iban, boolean active) {

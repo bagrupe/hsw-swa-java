@@ -43,5 +43,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <module>../52-produkte</module>
         <module>../52-produkte-solution</module>
         <module>../53-shop</module>
+        <module>../53-shop-solution</module>
     </modules>
 </project>
