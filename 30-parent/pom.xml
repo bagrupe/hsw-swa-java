@@ -67,5 +67,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <module>../34-jpa-onetomany</module>
         <module>../35-jpa-manytomany</module>
         <module>../36-jpa-onetomany-bidi</module>
+        <module>../37-jdbctemplate</module>
     </modules>
 </project>
