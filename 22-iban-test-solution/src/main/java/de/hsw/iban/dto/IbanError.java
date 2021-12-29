@@ -1,0 +1,14 @@
+package de.hsw.iban.dto;
+
+public enum IbanError {
+    NO_COUNTRY_CODE,
+    NO_ACCOUNT_NUMBER,
+    NO_BANKID,
+    NO_IBAN,
+    UNIMPLEMENTED_COUNTRY_CODE,
+    BAD_ACCOUNT_NUMBER,
+    BAD_BANKID,
+    BAD_FORMAT,
+    BAD_IBAN_LENGTH,
+    BAD_IBAN_CHECKDIGIT
+}
