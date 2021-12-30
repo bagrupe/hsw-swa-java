@@ -28,8 +28,4 @@ Set-Location $PSScriptRoot/40-parent
 
 & mvn clean install
 
-Set-Location $PSScriptRoot/50-parent
-
-& mvn clean install
-
 Set-Location $cwd
