@@ -16,6 +16,10 @@ Set-Location $PSScriptRoot/14-mavify-solution
 
 & mvn clean
 
+Set-Location $PSScriptRoot/20-parent
+
+& mvn clean
+
 Set-Location $PSScriptRoot/30-parent
 
 & mvn clean
