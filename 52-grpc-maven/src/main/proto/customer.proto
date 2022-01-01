@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package tutorial;
+
+option java_multiple_files = true;
+option java_package = "de.hsw.customer";
+option java_outer_classname = "CustomerProtos";
+
+message Customer {
+    int32 id = 1;
+    string name = 2;
+    string email = 3;
+
+    enum CustomerType {
+        PRIVATE = 0;
+        BUSINESS = 1;
+        NONPROFIT = 2;
+    }
+
+    CustomerType type = 4;
+}
+
+// protoc -I=. --java_out=src/main/java ./customer.proto
+
+service CustomerService {
+    rpc Search(Customer) returns (Customer);
+}
+
+// mvn archetype:generate -DgroupId=de.hsw.customer -DartifactId=customer-server -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
