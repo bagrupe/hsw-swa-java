@@ -1,0 +1,15 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+
+  <display-name>ServletJspDemo</display-name>
+
+  <servlet>
+    <servlet-name>counterServlet</servlet-name>
+    <servlet-class>de.hsw.webapp.CounterServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>counterServlet</servlet-name>
+    <url-pattern>/counter.svl</url-pattern>
+  </servlet-mapping>
+</web-app>
