@@ -28,4 +28,20 @@ Set-Location $PSScriptRoot/40-parent
 
 & mvn clean install
 
+Set-Location $PSScriptRoot/43-servlet-jsp-javax
+
+& mvn clean install
+
+Set-Location $PSScriptRoot/44-servlet-jsp-jakarta
+
+& mvn clean install
+
+Set-Location $PSScriptRoot/51-grpc-protoc
+
+& mvn clean install
+
+Set-Location $PSScriptRoot/52-grpc-maven
+
+& mvn clean install
+
 Set-Location $cwd
