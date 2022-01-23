@@ -1,3 +1,5 @@
+$location = Get-Location
+
 . $PSScriptRoot/clean.ps1
 
 $classpaths = Get-ChildItem -Path . -Include .classpath -Recurse -Hidden
@@ -16,4 +18,4 @@ foreach($file in $settings) {
 Set-Location $PSScriptRoot
 Remove-Item $PSScriptRoot/../hsw-swa-java.zip
 & zip -r $PSScriptRoot/../hsw-swa-java.zip . -x '*.git*' -x '*.DS_Store*'
-Set-Location $cwd
+Set-Location $location
